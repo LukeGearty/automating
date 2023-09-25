@@ -6,14 +6,14 @@ import shutil
 # and organize them into folders based on filetype. Uses the
 # magic library to check files
 # get the directory
-download_file = "C://Users//lgear//Downloads"
+download_file = "C://Path//to//downloads"
 os.chdir(download_file)
 # list directory
 directory = os.listdir(download_file)
 # create the jpg file on desktop if it doesn't exist
 def create_jpeg_folder():
     try:
-        directory_path = "C://Users//lgear//OneDrive//Desktop"
+        directory_path = "C://Path//To//Desktop"
         jpeg_directory = "JPEG_Folder"
         jpeg_path = os.path.join(directory_path,jpeg_directory)
         os.mkdir(jpeg_path)
@@ -22,7 +22,7 @@ def create_jpeg_folder():
     return jpeg_path
 def create_pdf_folder():
     try:
-        directory_path = "C://Users//lgear//OneDrive//Desktop"
+        directory_path = "C://Path//To//Desktop"
         pdf_folder = "PDF_Folder"
         pdf_path = os.path.join(directory_path, pdf_folder)
         os.mkdir(pdf_path)
